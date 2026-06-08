@@ -4,13 +4,13 @@
 Define how Thor should be framed for school safety decision-makers, parents/educators, and public safety partners so the value proposition is clear, credible, and trust-forward.
 
 ## Product Category Statement
-Thor is a school emergency response support capability: a Fusus-integrated aerial system that can provide real-time situational awareness to authorized responders during verified critical incidents.
+Thor is a school emergency response support capability: a remote-pilot-app-led aerial system that can provide real-time situational awareness to authorized responders during verified critical incidents.
 
 ## Core Problem Statement
 During rapidly evolving school emergencies, the first minutes are often marked by fragmented information, delayed visibility, and coordination gaps between school personnel, GSOC operators, and dispatch. These gaps can increase risk and slow protective action.
 
 ## Positioning Statement
-For school districts and public safety partners responsible for protecting students and staff, Thor is an emergency situational awareness system that helps authorized responders assess active threats faster and coordinate response with greater clarity. Unlike static-only or single-source alerting approaches, Thor combines aerial visibility, integrated camera context, and a human-governed operational workflow through Fusus.
+For school districts and public safety partners responsible for protecting students and staff, Thor is an emergency situational awareness system that helps authorized responders assess active threats faster and coordinate response with greater clarity. Unlike static-only or single-source alerting approaches, Thor combines aerial visibility, integrated camera context, and a human-governed operational workflow through a dedicated remote pilot app.
 
 ## Audience-Specific Value Messaging
 
@@ -42,8 +42,13 @@ For school districts and public safety partners responsible for protecting stude
 ### Thor Differentiation
 - Multi-asset fusion: Sentry alerts, camera context, and drone perspective in one operational view.
 - Human-governed flow: launch and dispatch decisions remain with authorized operators.
-- Integrated workflow: supports faster transition from alert to informed response.
+- Remote-pilot-app-first workflow: supports faster transition from alert to informed response.
 - Policy-ready framing: built with explicit governance, accountability, and trust safeguards.
+
+## Current Scope Update (June 2026)
+- Near-term pilot scope assumes drone launch and control through a dedicated remote pilot app.
+- Integration with external real-time operations platforms is deferred pending upstream architecture changes.
+- Messaging should avoid claiming direct third-party platform control in current-state narratives.
 
 ## Messaging Pillars
 1. Faster trusted visibility in critical moments.
@@ -73,7 +78,7 @@ Thor helps schools and responders gain rapid, reliable situational awareness dur
 ## Proof Points Needed from Engineering/Product
 - Activation trigger conditions and authorization logic.
 - Typical deployment timeline from verified alert to aerial visibility.
-- Integration scope across Fusus, cameras, and dispatch workflows.
+- Integration scope across remote pilot app, cameras, and dispatch workflows.
 - Flight and operational constraints (duration, environment limits, fallback modes).
 - Audit logging and role-based access mechanics.
 

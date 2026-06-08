@@ -22,11 +22,11 @@ As a [role], I want [capability] so that [operational value/outcome].
 ### A) Deployment Speed and Readiness
 - [ ] Drone is launchable within [X seconds] after [trigger].
 - [ ] Pre-flight diagnostics validate [battery, signal, GPS/IMU, mission readiness].
-- [ ] Launch command requires no more than [N] actions in Remote UX.
+- [ ] Launch command requires no more than [N] actions in remote pilot app.
 - [ ] Operator receives explicit launch confirmation state.
 
 ### B) Video and Telemetry
-- [ ] Live video is available in [Remote UX, Fusus, Respond] within [X seconds].
+- [ ] Live video is available in [remote pilot app, command dashboard, Respond] within [X seconds].
 - [ ] End-to-end latency remains below [X seconds].
 - [ ] Telemetry displayed includes [altitude, speed, heading, battery, signal].
 - [ ] Feed continuity maintained through [doorways/hallways/room transitions].

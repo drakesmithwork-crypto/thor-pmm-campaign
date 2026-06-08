@@ -7,7 +7,7 @@
 - Trigger Source: (Panic alert, manual call, sensor event, etc.)
 - Environment: (Indoor, outdoor, mixed)
 - Assumptions:
-- Dependencies: (Fusus, Remote UX, Respond, CAD, etc.)
+- Dependencies: (Remote pilot app, command dashboard, Respond/CAD, etc.)
 
 ## 2) Role and Authority Matrix
 | Role | Responsibility | Can Launch? | Can Approve Launch? | Can Override/Abort? | Notes |

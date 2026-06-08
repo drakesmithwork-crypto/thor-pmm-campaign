@@ -3,6 +3,11 @@
 ## Scope
 This brief summarizes week-one findings on historical Fusus integration patterns to inform Thor PMM strategy, operational messaging, and implementation realism.
 
+## Program Scope Update (June 2026)
+- Current guidance pauses direct Fusus integration for drone control work.
+- Near-term pilot scope assumes drone operation through a dedicated remote pilot app.
+- Findings in this brief remain relevant as market context, but should not be framed as current control-path commitments.
+
 ## Sources Reviewed
 - Axon product and resource pages for Axon Fusus
 - Axon case studies (Shreveport PD, West Sacramento PD)
@@ -18,6 +23,7 @@ Across case studies and product materials, Fusus is described as a map-centric o
 
 PMM implication:
 - Thor narrative should emphasize coordination and decision clarity, not autonomous enforcement.
+- Position Fusus-related references as interoperability context rather than current control architecture.
 
 ### 2) Integrations are typically phased, not greenfield replacement
 Agencies appear to connect existing camera networks, legacy VMS, CAD data, and selected sensors over time rather than replacing all infrastructure at once.
@@ -36,6 +42,7 @@ Skydio/Fusus documentation indicates alert events can appear in both systems, wi
 
 PMM implication:
 - Thor ConOps should explicitly include alert ingestion, human validation, launch decision, and dispatch communication checkpoints.
+- Immediate implementation should map those checkpoints to the remote pilot app control flow.
 
 ### 5) Claimed value is speed and investigative efficiency
 Case studies report reduced investigative friction (faster access to incident video, less manual collection effort) and improved situational awareness.
@@ -57,9 +64,9 @@ PMM implication:
 - Policy-driven trigger rules
 
 ### Core processing layer
-- Fusus-style correlation and map view
+- Correlation and map view via currently available command and monitoring tools
 - Human GSOC/command review
-- Authorized decision points (launch/escalate/share)
+- Authorized decision points (launch/escalate/share) via remote pilot app
 
 ### Outputs
 - Incident visibility package for responders

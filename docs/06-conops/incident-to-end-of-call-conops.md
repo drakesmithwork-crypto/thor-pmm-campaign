@@ -4,12 +4,13 @@
 Define the operational flow for Thor-supported school emergency response from first signal through closure, including human, technical, and legal/policy hand-offs.
 
 ## Scope
-This ConOps describes a critical-incident workflow integrating school alerts, Fusus, GSOC operations, drone deployment support, and law enforcement dispatch coordination.
+This ConOps describes a critical-incident workflow integrating school alerts, a remote pilot command app, GSOC operations, drone deployment support, and law enforcement dispatch coordination.
 
 ## Actor Definitions
 - School Staff: initiates emergency protocols and confirms initial context.
 - School Safety Lead: validates escalation and coordinates with district process.
-- Fusus Platform: ingests and correlates alert and camera data.
+- Incident Correlation Platform: ingests and correlates alert and camera data.
+- Remote Pilot App: primary interface for launch, control, and telemetry during current pilot scope.
 - GSOC Operator: performs human review and launch/escalation decisions.
 - Drone Operations Function: executes approved launch and streaming procedures.
 - Dispatch (Public Safety): receives verified situational data and coordinates response.
@@ -21,31 +22,31 @@ This ConOps describes a critical-incident workflow integrating school alerts, Fu
 ### Phase 1: Detection and Initial Alert
 1. Incident occurs or a verified threat indicator is observed.
 2. School staff activates emergency alert protocol.
-3. Alert enters Fusus via approved integration path.
+3. Alert enters the incident correlation platform via approved integration path.
 
 Hand-offs
 - Human: School Staff -> School Safety Lead.
-- Technical: Alert signal -> Fusus ingestion pipeline.
+- Technical: Alert signal -> correlation and notification pipeline.
 - Legal/Policy: Activation must match approved incident categories.
 
 ### Phase 2: Correlation and Human Review
-4. Fusus correlates alert metadata and available camera context.
+4. Correlation platform enriches alert metadata and available camera context.
 5. GSOC operator receives incident queue entry.
 6. GSOC performs human review for signal validity and urgency.
 
 Hand-offs
 - Human: School Safety Lead -> GSOC Operator.
-- Technical: Fusus correlated incident package -> GSOC console.
+- Technical: Correlated incident package -> GSOC console and remote pilot queue.
 - Legal/Policy: Access to data limited to authorized incident roles.
 
 ### Phase 3: Launch Decision and Aerial Visibility
 7. GSOC confirms policy-qualified criteria and makes launch decision.
-8. Drone operation is initiated under approved SOP.
+8. Drone operation is initiated in the remote pilot app under approved SOP.
 9. Live stream and telemetry are shared with authorized responders.
 
 Hand-offs
 - Human: GSOC Operator -> Drone Operations Function.
-- Technical: Launch command -> Drone system + live feed routing.
+- Technical: Launch command (remote pilot app) -> Drone system + live feed routing.
 - Legal/Policy: Launch authority and rationale logged for audit.
 
 ### Phase 4: Dispatch and Active Response
@@ -82,7 +83,7 @@ Hand-offs
 | Workflow Step | Primary Responsible | Supporting Roles | Approval/Authority |
 | --- | --- | --- | --- |
 | Initial emergency trigger | School Staff | School Safety Lead | School emergency policy |
-| Incident correlation | Fusus Platform (system) | GSOC Operator | Authorized access policy |
+| Incident correlation | Correlation Platform (system) | GSOC Operator | Authorized access policy |
 | Launch decision | GSOC Operator | Safety lead liaison | Launch SOP and incident criteria |
 | Dispatch escalation | Dispatch | GSOC liaison | Jurisdiction protocol |
 | End-of-call closure | Incident command/GSOC | District safety lead | Closure checklist |
@@ -94,6 +95,11 @@ Hand-offs
 - Record launch, escalation, dispatch, and stand-down decisions with timestamps.
 - Apply retention/deletion schedule after closure.
 - Document exception handling for legal holds and investigations.
+
+## Current Scope Update (June 2026)
+- Drone launch and control are currently scoped to a dedicated remote pilot app.
+- Direct third-party platform control of drones is out of scope for the current pilot phase.
+- Future interoperability is treated as a later architecture decision, not a current requirement.
 
 ## Failure and Fallback Modes
 - If drone unavailable: continue response using fixed camera and staff reports.
@@ -112,10 +118,10 @@ Hand-offs
 ```mermaid
 flowchart TD
 incidentDetected[IncidentDetected] --> alertCreated[AlertCreated]
-alertCreated --> fususIngest[FususIngestAndCorrelate]
-fususIngest --> gsocReview[GSOCOperatorReview]
+alertCreated --> correlate[CorrelateAndQueue]
+correlate --> gsocReview[GSOCOperatorReview]
 gsocReview --> launchDecision[HumanLaunchDecision]
-launchDecision --> droneDeploy[DroneDeployAndStream]
+launchDecision --> droneDeploy[RemotePilotDeployAndStream]
 droneDeploy --> dispatchDecision[DispatchDecision]
 dispatchDecision --> lawResponse[LawEnforcementResponse]
 lawResponse --> incidentStabilized[IncidentStabilized]
