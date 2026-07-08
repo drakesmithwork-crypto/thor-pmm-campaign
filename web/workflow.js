@@ -67,6 +67,9 @@
 
     const sidebar = document.querySelector('.step-sidebar');
     if (sidebar) sidebar.classList.toggle('hidden', currentStep === 0);
+
+    const workflowBody = document.querySelector('.workflow-body');
+    if (workflowBody) workflowBody.classList.toggle('no-sidebar', currentStep === 0);
   }
 
   stepButtons.forEach((btn) => {

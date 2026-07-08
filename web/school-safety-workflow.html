@@ -3,31 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thor | Desert Mountain High School — Workflow Prototype</title>
+    <title>Desert Mountain Capstone — Interactive Storyboard</title>
     <link rel="stylesheet" href="./workflow.css" />
   </head>
   <body>
     <div class="workflow-app">
       <header class="workflow-topbar">
-        <p class="brand">Thor — Desert Mountain High School ConOps</p>
-        <span class="scenario-tag">CONOPS-NORMAL-001 · Scottsdale, AZ</span>
+        <p class="brand">Desert Mountain — Capstone Storyboard</p>
+        <span class="scenario-tag">Scottsdale PD RTCC · SUSD · Act 1–6</span>
         <a href="./index.html" style="color: #fff; font-size: 0.78rem; text-decoration: none">Campaign Site</a>
       </header>
 
-      <div class="workflow-body">
+      <div class="workflow-body no-sidebar">
         <aside class="step-sidebar hidden" aria-label="Workflow steps">
           <h2>Workflow Stages</h2>
           <ul class="step-list">
             <li><button class="step-btn" data-step-nav="0" type="button"><span class="step-num">0</span><span class="step-label">Overview</span><span class="step-actor">Desert Mountain story</span></button></li>
-            <li><button class="step-btn" data-step-nav="1" type="button"><span class="step-num">1</span><span class="step-label">Alert Ingest</span><span class="step-actor">CAD + RTCC queue</span></button></li>
+            <li><button class="step-btn" data-step-nav="1" type="button"><span class="step-num">1</span><span class="step-label">Act 1 — Alert</span><span class="step-actor">911 → SPD RTCC</span></button></li>
             <li><button class="step-btn" data-step-nav="2" type="button"><span class="step-num">2</span><span class="step-label">Validation</span><span class="step-actor">Torres + Rodriguez</span></button></li>
-            <li><button class="step-btn" data-step-nav="3" type="button"><span class="step-num">3</span><span class="step-label">Launch Decision</span><span class="step-actor">Lt. Marsh</span></button></li>
-            <li><button class="step-btn" data-step-nav="4" type="button"><span class="step-num">4</span><span class="step-label">Deployment</span><span class="step-actor">Drone 4 from dock</span></button></li>
-            <li><button class="step-btn" data-step-nav="5" type="button"><span class="step-num">5</span><span class="step-label">Live Operations</span><span class="step-actor">POI + armed subject</span></button></li>
-            <li><button class="step-btn" data-step-nav="6" type="button"><span class="step-num">6</span><span class="step-label">TASER / NMI</span><span class="step-actor">Arm, fire, re-energize</span></button></li>
-            <li><button class="step-btn" data-step-nav="7" type="button"><span class="step-num">7</span><span class="step-label">Dispatch Handoff</span><span class="step-actor">Subject down package</span></button></li>
-            <li><button class="step-btn" data-step-nav="8" type="button"><span class="step-num">8</span><span class="step-label">Stabilization</span><span class="step-actor">LE arrival + arrest</span></button></li>
-            <li><button class="step-btn" data-step-nav="9" type="button"><span class="step-num">9</span><span class="step-label">Closure</span><span class="step-actor">Audit + retention</span></button></li>
+            <li><button class="step-btn" data-step-nav="3" type="button"><span class="step-num">3</span><span class="step-label">Launch Auth</span><span class="step-actor">Lt. Marsh</span></button></li>
+            <li><button class="step-btn" data-step-nav="4" type="button"><span class="step-num">4</span><span class="step-label">Act 2 — Deploy</span><span class="step-actor">Drone 4 lifts</span></button></li>
+            <li><button class="step-btn" data-step-nav="5" type="button"><span class="step-num">5</span><span class="step-label">POI / Armed</span><span class="step-actor">Act 2 cont.</span></button></li>
+            <li><button class="step-btn" data-step-nav="6" type="button"><span class="step-num">6</span><span class="step-label">Act 3 — TASER</span><span class="step-actor">NMI @ 9:49:41</span></button></li>
+            <li><button class="step-btn" data-step-nav="7" type="button"><span class="step-num">7</span><span class="step-label">Act 5 — Handoff</span><span class="step-actor">Dispatch + LE</span></button></li>
+            <li><button class="step-btn" data-step-nav="8" type="button"><span class="step-num">8</span><span class="step-label">Act 5 — Arrival</span><span class="step-actor">Subject secured</span></button></li>
+            <li><button class="step-btn" data-step-nav="9" type="button"><span class="step-num">9</span><span class="step-label">Act 6 — Closure</span><span class="step-actor">Audit trail</span></button></li>
           </ul>
           <div class="sidebar-meta"><strong>Navigate</strong>Next Step, sidebar, or arrow keys. Click decision buttons to pass gates.</div>
         </aside>
@@ -36,70 +36,76 @@
           <!-- STEP 0 -->
           <section class="workflow-step is-visible" data-step-panel="0">
             <div class="intro-screen">
-              <p style="text-transform:uppercase;font-size:0.72rem;letter-spacing:0.07em;color:var(--primary);margin:0">Desert Mountain Incident — Capstone Storyboard</p>
-              <h1>End-to-End School Emergency Workflow</h1>
-              <p style="color:var(--muted);max-width:70ch;margin:0.35rem 0 0">Tuesday, October — 1,400 students at Desert Mountain High School, Scottsdale. Five TASER-equipped drones docked across campus. None recording until a verified emergency. This prototype walks the full chain: alert → validation → launch → live ops → TASER/NMI → dispatch → LE arrest → closure.</p>
+              <p style="text-transform:uppercase;font-size:0.72rem;letter-spacing:0.07em;color:var(--primary);margin:0">The Desert Mountain Incident — Capstone Presentation</p>
+              <h1>A Narrative for the Axon Drone Capstone</h1>
+              <p style="color:var(--muted);max-width:80ch;margin:0.35rem 0 0">Desert Mountain High School, Scottsdale — large single-story campus, ~1,400 students. Five TASER-equipped drones in locked ceiling docks. <strong>None have ever fired. None have ever recorded a single second of footage.</strong> Fifteen miles away at Scottsdale PD, RSOC operator Torres is on duty. His queue is empty. The system is working exactly as designed.</p>
 
               <div class="intro-grid">
+                <article class="intro-card span-3">
+                  <h3>Coherent chain of command</h3>
+                  <p style="font-size:0.82rem;color:var(--muted);margin:0 0 0.5rem">An alert reaches local PD through infrastructure they already trust — 911 call, ShotSpotter, staff panic wearable, or SRO radio. <strong>No Axon cameras required for the trigger.</strong> Most deaths in a school shooting happen in the first two minutes; the dock enables sub-two-minute response without permanent surveillance. Once the alert hits the RTCC, a watch commander authorizes deploy — it is never automatic. Policy must draw the line: <strong>authorized emergency response vs. prohibited general surveillance.</strong> This implementation satisfies that line by design.</p>
+                </article>
                 <article class="intro-card">
-                  <h3>Act 1 — The alert (9:47 AM)</h3>
-                  <p>Front office panic button → SPD CAD + Safety Lead Rodriguez. Alert in Torres's queue within <strong>5 seconds</strong>. No drones move. No footage exists yet.</p>
+                  <h3>Setting the scene</h3>
                   <ul>
-                    <li>Report: unfamiliar adult, east wing near Room 114, possibly armed</li>
-                    <li>Rodriguez initiates soft lockdown, staff check-ins</li>
-                    <li>Confidence: unconfirmed but credible (1 corroborating source)</li>
+                    <li>Three classroom wings + central commons; gym east; admin front</li>
+                    <li>Drone 1 — admin corridor · Drone 2 — commons/north</li>
+                    <li>Drone 3 — south wing · <strong>Drone 4 — east (deployed)</strong></li>
+                    <li>Drone 5 — gymnasium (standby all incident)</li>
                   </ul>
                 </article>
                 <article class="intro-card">
-                  <h3>Campus drone layout</h3>
+                  <h3>Act 1 — Alert (9:47 AM)</h3>
+                  <p>Staff pulls <strong>911-integrated panic wearable</strong> → CAD priority alert + Rodriguez notified. Alert in Torres's queue in 5 sec. No drones move. No footage.</p>
                   <ul>
-                    <li>Drone 1 — Admin corridor (front)</li>
-                    <li>Drone 2 — Commons / north wing junction</li>
-                    <li>Drone 3 — South wing</li>
-                    <li><strong>Drone 4 — East wing (deployed)</strong></li>
-                    <li>Drone 5 — Gymnasium (standby — not launched)</li>
+                    <li>Student report: unfamiliar adult, east wing, Room 114, possibly armed</li>
+                    <li>Rodriguez: soft lockdown + staff check-ins</li>
                   </ul>
                 </article>
-                <article class="intro-card" style="grid-column:1/-1">
+                <article class="intro-card">
+                  <h3>Act 2 — Deployment (1:20)</h3>
+                  <p>Marsh approves Drone 4 only. Torres preflight → launch <strong>9:48:20</strong>. Live feed to pilot app, Fusus, Respond within 5 sec. POI at corridor end — raises handgun.</p>
+                </article>
+                <article class="intro-card">
+                  <h3>Act 3 — TASER (2:10)</h3>
+                  <p>Hold → TASER arm request → Marsh approves → target lock → <strong>2-sec hold to discharge</strong>. Subject down <strong>9:49:41</strong> — 2:41 after panic button.</p>
+                </article>
+                <article class="intro-card">
+                  <h3>Act 4 — Campus holds</h3>
+                  <p>While Drone 4 flew, <strong>Drones 1–3 and 5 did exactly nothing</strong>. Marsh deliberately did not launch others. 1,400 students in north, south, commons, and gym saw zero drones overhead. Response calibrated to threat — not a surveillance network.</p>
+                </article>
+                <article class="intro-card">
+                  <h3>Act 5 — Handoff (2:41)</h3>
+                  <p>Torres pushes incident package: subject down, weapon unsecured, overwatch active. Officers enter <strong>9:51</strong> with same feed. Subject secured <strong>9:52</strong>. Five minutes after panic button.</p>
+                </article>
+                <article class="intro-card">
+                  <h3>Act 6 — Closure</h3>
+                  <p>Drone 4 docked <strong>9:54</strong>. <strong>11 minutes</strong> of footage — Drone 4 only. Drones 1–3, 5: zero footage. Full audit trail; incident-limited retention.</p>
+                </article>
+                <article class="intro-card span-3">
                   <h3>Role and authority matrix</h3>
                   <table class="role-table">
-                    <thead><tr><th>Role</th><th>Responsibility</th><th>Launch</th><th>Approve</th><th>TASER Arm</th><th>Override</th></tr></thead>
+                    <thead><tr><th>Role</th><th>Location</th><th>Launch</th><th>Approve</th><th>TASER</th><th>Notes</th></tr></thead>
                     <tbody>
-                      <tr><td><strong>RSOC Operator (Torres)</strong></td><td>Pilot, stream, annotate, discharge after approval</td><td class="yes">Yes</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td></tr>
-                      <tr><td><strong>Command Supervisor (Marsh)</strong></td><td>Launch + TASER arm approval, final authority</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Yes</td></tr>
-                      <tr><td><strong>School Safety Lead (Rodriguez)</strong></td><td>School-side context, escalation clearance</td><td class="no">No</td><td class="yes">School</td><td class="no">No</td><td>Pause</td></tr>
-                      <tr><td><strong>Dispatch</strong></td><td>Unit assignment, ack handoff</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="no">No</td></tr>
-                      <tr><td><strong>Law Enforcement</strong></td><td>Scene command, arrest, reposition requests</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td>Request</td></tr>
+                      <tr><td><strong>RSOC Operator (Torres)</strong></td><td>Scottsdale PD RTCC</td><td class="yes">Yes</td><td class="no">No</td><td>Discharge after arm</td><td>Remote pilot — launches after Marsh approval</td></tr>
+                      <tr><td><strong>Command Supervisor (Lt. Marsh)</strong></td><td>Scottsdale PD RTCC</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="yes">Arm auth</td><td>Watch commander — final authority</td></tr>
+                      <tr><td><strong>School Safety Lead (Rodriguez)</strong></td><td>Desert Mountain</td><td class="no">No</td><td class="yes">School</td><td class="no">No</td><td>Context + pause/abort request</td></tr>
+                      <tr><td><strong>Dispatch / CAD</strong></td><td>Scottsdale PD</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td>Receives handoff package + ack</td></tr>
+                      <tr><td><strong>Law Enforcement</strong></td><td>Field</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td>IC on scene; reposition requests via RTCC</td></tr>
                     </tbody>
                   </table>
                 </article>
-                <article class="intro-card">
-                  <h3>Metrics and SLOs</h3>
-                  <ul>
-                    <li>Alert-to-review: ≤ 15 sec</li>
-                    <li>Review-to-launch decision: ≤ 20 sec</li>
-                    <li>Launch-to-live-video: ≤ 5 sec from takeoff</li>
-                    <li>Video latency: &lt; 2 sec</li>
-                    <li>Dispatch handoff: ≤ 60 sec after launch</li>
-                    <li>Audit log completeness: 100%</li>
-                  </ul>
-                </article>
-                <article class="intro-card">
-                  <h3>Key policy checkpoints</h3>
-                  <table class="policy-table">
-                    <thead><tr><th>Checkpoint</th><th>Step</th><th>Owner</th></tr></thead>
-                    <tbody>
-                      <tr><td>Policy-qualified trigger</td><td>1</td><td>Safety Lead</td></tr>
-                      <tr><td>Operator authorization</td><td>3–4</td><td>Supervisor</td></tr>
-                      <tr><td>Low battery (&lt;30%)</td><td>4</td><td>Operator</td></tr>
-                      <tr><td>TASER arm approval</td><td>6</td><td>Supervisor</td></tr>
-                      <tr><td>Signal degradation</td><td>5–6</td><td>Operator</td></tr>
-                      <tr><td>Privacy / data boundary</td><td>5–9</td><td>Compliance</td></tr>
-                    </tbody>
-                  </table>
+                <article class="intro-card span-3">
+                  <h3>Open questions — named honestly</h3>
+                  <div class="cards three-up" style="display:grid;grid-template-columns:repeat(3,1fr);gap:0.75rem;margin-top:0.5rem">
+                    <div><strong>Misidentification</strong><p style="font-size:0.78rem;color:var(--muted);margin:0.25rem 0 0">Hold state, second-human TASER approval, and 2-sec confirmation create friction — but do not eliminate risk if feed quality is poor or a student enters the corridor.</p></div>
+                    <div><strong>Legal framework</strong><p style="font-size:0.78rem;color:var(--muted);margin:0.25rem 0 0">Armed drone deployment in schools requires policy that does not fully exist yet. FAA Part 108 still finalizing. Axon's 2022 ethics board episode shows the public conversation is not settled.</p></div>
+                    <div><strong>Equity</strong><p style="font-size:0.78rem;color:var(--muted);margin:0.25rem 0 0">Who decides which schools get armed drones? Desert Mountain is a deliberately chosen pilot environment — framework must be proven before broader deployment.</p></div>
+                  </div>
+                  <p style="font-size:0.82rem;color:var(--muted);margin:0.75rem 0 0"><strong>The vision:</strong> faster than human response, more restrained than always-on surveillance, human chain of command at every gate, accountable to an immutable audit record. It does not exist in final form today — but Desert Mountain shows exactly what it would look like if it did.</p>
                 </article>
               </div>
-              <div style="margin-top:1rem"><button class="nav-btn primary" id="start-workflow" type="button">Start — 9:47 AM Panic Alert</button></div>
+              <div style="margin-top:1rem"><button class="nav-btn primary" id="start-workflow" type="button">Start — Act 1 · 9:47 AM Panic Alert</button></div>
             </div>
           </section>
 
@@ -108,34 +114,35 @@
             <div class="stage-header">
               <div class="stage-header-top">
                 <div>
-                  <h1>Step 1 — Alert Ingest</h1>
-                  <p class="stage-sub">Panic alert enters SPD CAD and RTCC operator queue. Required: source, location, timestamp, operator identity. Max delay: 5 seconds.</p>
+                  <h1>Act 1 — The Alert</h1>
+                  <p class="stage-sub">Staff panic wearable → 911 + SPD CAD → RTCC queue. Rodriguez notified at school. Chula Vista DFR benchmark: drones on scene in &lt;2.5 min across 4,000+ calls. No drones move. No footage exists.</p>
                 </div>
                 <div class="role-switcher">
-                  <button class="role-pill is-active" data-role-switch="rtcc" type="button">RTCC Queue</button>
+                  <button class="role-pill is-active" data-role-switch="ndoc" type="button">SPD RTCC</button>
                   <button class="role-pill" data-role-switch="school" type="button">School Alert</button>
                 </div>
               </div>
               <div class="req-strip">
-                <span class="req-chip">SLO: queue ≤ 5 sec</span>
+                <span class="req-chip">SLO: RTCC queue ≤ 5 sec</span>
+                <span class="req-chip">Twin load &lt; 5 sec</span>
                 <span class="req-chip">Checkpoint: policy-qualified trigger</span>
               </div>
               <div class="gate-banner pending" id="gate-step-1"><strong>Gate:</strong> Is trigger policy-qualified? <span data-gate-status style="margin-left:auto;font-weight:700">Pending</span></div>
             </div>
             <div class="mock-ui">
-              <div class="mock-frame" data-role-view="rtcc">
-                <div class="mock-titlebar"><span>RTCC — Incident Queue · Scottsdale PD</span><span class="badge badge-critical">PRIORITY 1</span></div>
+              <div class="mock-frame" data-role-view="ndoc">
+                <div class="mock-titlebar"><span>Scottsdale PD RTCC — Incident Queue</span><span class="badge badge-critical">PRIORITY 1</span></div>
                 <div class="mock-content two-col">
                   <div class="mock-panel">
                     <h3>Incoming Alert — 9:47:05</h3>
                     <div class="alert-card">
-                      <h4>PANIC BUTTON — Desert Mountain High School</h4>
-                      <p>12501 E Via Linda, Scottsdale · Front office → east wing vicinity</p>
+                      <h4>PANIC WEARABLE — Desert Mountain High School</h4>
+                      <p>SUSD · Scottsdale · Front office · 911 → CAD routed</p>
                       <div class="meta-grid">
-                        <div class="meta-item"><span>Source</span>Staff panic button → 911/CAD</div>
-                        <div class="meta-item"><span>Queue time</span>4.8 sec ✓</div>
-                        <div class="meta-item"><span>Operator</span>Torres (RSOC)</div>
-                        <div class="meta-item"><span>Type</span>Active threat — qualifying</div>
+                        <div class="meta-item"><span>Source</span>Panic wearable → 911 → SPD CAD</div>
+                        <div class="meta-item"><span>RTCC queue</span>5 sec ✓</div>
+                        <div class="meta-item"><span>Operator</span>Torres (on duty, queue was empty)</div>
+                        <div class="meta-item"><span>Trigger staff</span>Front office — identity logged</div>
                       </div>
                     </div>
                     <div class="mock-actions">
@@ -160,10 +167,10 @@
                 <div class="mock-content"><div class="mock-panel">
                   <h3>Transmission Log</h3>
                   <div class="timeline-rail">
-                    <div class="timeline-event active"><div class="time">9:47:00</div><strong>Panic button</strong> — front office</div>
-                    <div class="timeline-event active"><div class="time">9:47:01</div>Signal to 911 + SPD CAD</div>
-                    <div class="timeline-event active"><div class="time">9:47:02</div>Rodriguez notified — incident code</div>
-                    <div class="timeline-event"><div class="time">9:47:05</div>RTCC queue — no drone movement</div>
+                    <div class="timeline-event active"><div class="time">9:47:00</div><strong>Panic wearable</strong> — front office staff</div>
+                    <div class="timeline-event active"><div class="time">9:47:01</div>Signal to 911 + SPD CAD simultaneously</div>
+                    <div class="timeline-event active"><div class="time">9:47:02</div>Rodriguez notified — incident code on phone</div>
+                    <div class="timeline-event"><div class="time">9:47:05</div>RTCC queue — Torres opens incident — no drone movement</div>
                   </div>
                   <p style="font-size:0.75rem;color:var(--muted);margin-top:0.65rem">No drones have moved. No footage exists.</p>
                 </div></div>
@@ -176,41 +183,46 @@
             <div class="stage-header">
               <div class="stage-header-top">
                 <div>
-                  <h1>Step 2 — Validation</h1>
-                  <p class="stage-sub">Torres calls Rodriguez. Cross-check staff context. Tag confidence before escalation. SLO: alert-to-review ≤ 15 sec.</p>
+                  <h1>Validation &amp; Escalation</h1>
+                  <p class="stage-sub">Torres calls Rodriguez immediately at Scottsdale PD RTCC. Tags incident "unconfirmed but credible" — one corroborating source, qualifying emergency type. Escalates to Lt. Marsh. Torres cannot launch without her.</p>
                 </div>
                 <div class="role-switcher">
-                  <button class="role-pill is-active" data-role-switch="rsoc" type="button">Torres (RSOC)</button>
-                  <button class="role-pill" data-role-switch="safety" type="button">Rodriguez (Safety Lead)</button>
+                  <button class="role-pill is-active" data-role-switch="analyst" type="button">Torres (RTCC)</button>
+                  <button class="role-pill" data-role-switch="safety" type="button">Rodriguez (School)</button>
                 </div>
               </div>
               <div class="req-strip"><span class="req-chip">Rule: ≥1 corroborating source before launch approval</span></div>
               <div class="gate-banner pending" id="gate-step-2"><strong>Gate:</strong> Sufficient confidence to escalate? <span data-gate-status style="margin-left:auto;font-weight:700">Pending</span></div>
             </div>
             <div class="mock-ui">
-              <div class="mock-frame" data-role-view="rsoc">
-                <div class="mock-titlebar"><span>Alert Triage · INC-DMHS-2026-1008</span><span>Operator: Torres</span></div>
+              <div class="mock-frame" data-role-view="analyst">
+                <div class="mock-titlebar"><span>RTCC Alert Triage · INC-DMHS-2026-1008</span><span>Operator: Torres · 15 mi from campus</span></div>
                 <div class="mock-content three-col">
                   <div class="mock-panel">
-                    <h3>Validation Data</h3>
-                    <ul class="checklist">
-                      <li><span class="check-icon done">✓</span> Panic button verified</li>
-                      <li><span class="check-icon done">✓</span> Rodriguez verbal confirm — east wing threat</li>
-                      <li><span class="check-icon done">✓</span> Soft lockdown active</li>
-                      <li><span class="check-icon done">✓</span> No drill scheduled today</li>
-                    </ul>
+                    <h3>Campus Map — East Wing</h3>
+                    <div class="map-placeholder" style="min-height:100px">
+                      <div class="zone" style="top:15%;left:10%;width:45%;height:35%">East wing — Room 114 area</div>
+                    </div>
+                    <div class="status-row"><span>Report</span><span class="badge badge-review">Unfamiliar adult, possibly armed</span></div>
                   </div>
                   <div class="mock-panel">
-                    <h3>Escalation</h3>
+                    <h3>Torres — Validation Call</h3>
+                    <ul class="checklist">
+                      <li><span class="check-icon done">✓</span> Panic wearable verified via CAD</li>
+                      <li><span class="check-icon done">✓</span> Rodriguez verbal confirm — east wing</li>
+                      <li><span class="check-icon done">✓</span> Soft lockdown active</li>
+                      <li><span class="check-icon done">✓</span> ≥1 corroborating source</li>
+                    </ul>
                     <p style="font-size:0.78rem;margin:0">Confidence: <span class="badge badge-review">Unconfirmed but credible</span></p>
                     <div class="mock-actions">
                       <button class="mock-btn primary" id="btn-confirm-validation" type="button">Escalate to Lt. Marsh</button>
                     </div>
                   </div>
                   <div class="mock-panel">
-                    <h3>Dock Status (All 5)</h3>
-                    <div class="status-row"><span>Drone 1–3, 5</span><span class="badge badge-ok">Standby</span></div>
-                    <div class="status-row"><span>Drone 4 (East wing)</span><span class="badge badge-info">Candidate</span></div>
+                    <h3>Five Dock Statuses</h3>
+                    <div class="status-row"><span>Drone 4 (East)</span><span class="badge badge-info">Closest to threat</span></div>
+                    <div class="status-row"><span>Drones 1–3, 5</span><span class="badge badge-ok">Standby — charged, sealed</span></div>
+                    <p style="font-size:0.72rem;color:var(--muted);margin:0.5rem 0 0">Remote pilot deploys from dock inside school — Chula Vista DFR: &lt;2.5 min on scene in 4,000+ calls.</p>
                   </div>
                 </div>
               </div>
@@ -241,8 +253,8 @@
             <div class="stage-header">
               <div class="stage-header-top">
                 <div>
-                  <h1>Step 3 — Launch Decision</h1>
-                  <p class="stage-sub">Lt. Marsh reviews and authorizes targeted deployment — Drone 4 to east wing only. Four other drones remain on standby.</p>
+                  <h1>Launch Authorization — Act 4 Preview</h1>
+                  <p class="stage-sub">Lt. Marsh reviews alert source, Rodriguez confirmation, confidence tag, all five dock statuses. Approves <strong>targeted east wing deployment only</strong>. Four other drones remain standby — response calibrated to threat.</p>
                 </div>
               </div>
               <div class="req-strip"><span class="req-chip">SLO: review-to-launch ≤ 20 sec</span><span class="req-chip">Checkpoint: operator authorization</span></div>
@@ -250,19 +262,20 @@
             </div>
             <div class="mock-ui">
               <div class="mock-frame">
-                <div class="mock-titlebar"><span>Supervisor Command — Launch Authorization</span><span>Lt. Marsh</span></div>
+                <div class="mock-titlebar"><span>RTCC Watch Commander — Launch Authorization</span><span>Lt. Marsh · Scottsdale PD</span></div>
                 <div class="mock-content two-col">
                   <div class="mock-panel">
                     <h3>Incident Summary</h3>
                     <div class="handoff-package">
                       <dl>
                         <dt>Location</dt><dd>East wing — Room 114 vicinity</dd>
-                        <dt>Confidence</dt><dd>Unconfirmed but credible</dd>
-                        <dt>School clearance</dt><dd>Rodriguez — 9:47:48</dd>
-                        <dt>Recommended asset</dt><dd>Drone 4 (east wing dock)</dd>
-                        <dt>Other drones</dt><dd>1, 2, 3, 5 — standby (not launching)</dd>
+                        <dt>Confidence</dt><dd>Unconfirmed but credible (Torres tag)</dd>
+                        <dt>School clearance</dt><dd>Rodriguez — verbal confirm</dd>
+                        <dt>Recommended asset</dt><dd>Drone 4 (east wing dock — closest)</dd>
+                        <dt>Act 4 — Other drones</dt><dd>1, 2, 3, 5 — deliberately NOT launching</dd>
                       </dl>
                     </div>
+                    <p style="font-size:0.72rem;color:var(--warn);margin:0.5rem 0 0;border-left:3px solid var(--warn);padding-left:0.5rem"><strong>Campus holds:</strong> 1,400 students in north, south, commons, and gym will see zero drones overhead unless threat expands.</p>
                   </div>
                   <div class="mock-panel">
                     <h3>Authorization</h3>
@@ -283,8 +296,8 @@
             <div class="stage-header">
               <div class="stage-header-top">
                 <div>
-                  <h1>Step 4 — Deployment</h1>
-                  <p class="stage-sub">Torres launches Drone 4 from east wing dock. SLA: airborne within 30 sec. 3-action launch. Telemetry: alt, speed, heading, battery, signal, asset ID.</p>
+                  <h1>Act 2 — Deployment</h1>
+                  <p class="stage-sub">Torres selects Drone 4 at Scottsdale PD RTCC. Three actions in remote pilot app. Drone lifts from dock <strong>inside the school</strong> at 9:48:20. Live feed to pilot app, Fusus, and Respond within 5 seconds.</p>
                 </div>
               </div>
               <div class="req-strip"><span class="req-chip">Launch SLA: ≤ 30 sec</span><span class="req-chip">Battery block: &lt;30% unless override</span></div>
@@ -292,10 +305,10 @@
             </div>
             <div class="mock-ui">
               <div class="mock-frame">
-                <div class="mock-titlebar"><span>Remote Pilot App — Drone 4 Launch</span><span>East Wing Dock</span></div>
+                <div class="mock-titlebar"><span>Remote Pilot App — Drone 4 · East Wing Dock (in-school)</span><span>Torres · Scottsdale PD RTCC</span></div>
                 <div class="mock-content two-col">
                   <div class="mock-panel">
-                    <h3>Preflight (9:48:15 approved)</h3>
+                    <h3>Preflight — Marsh approved 9:48:15</h3>
                     <div class="preflight-grid">
                       <div class="preflight-item pass">Battery<span class="val">91%</span></div>
                       <div class="preflight-item pass">Comms<span class="val">Nominal</span></div>
@@ -304,6 +317,7 @@
                       <div class="preflight-item pass">Profile<span class="val">Indoor-E</span></div>
                       <div class="preflight-item pass">TASER<span class="val">Loaded</span></div>
                     </div>
+                    <div class="status-row"><span>Control link</span><span class="badge badge-ok">Nominal</span></div>
                     <div class="mock-actions">
                       <button class="mock-btn primary" id="btn-launch-drone" type="button" disabled>Release from Dock — Launch</button>
                     </div>
@@ -313,8 +327,9 @@
                     <h3>Launch Timeline</h3>
                     <div class="timeline-rail">
                       <div class="timeline-event active"><div class="time">9:48:15</div>Marsh approval</div>
-                      <div class="timeline-event"><div class="time">9:48:20</div>Drone 4 lifts — target</div>
-                      <div class="timeline-event"><div class="time">+5 sec</div>Live video to pilot, Fusus, Respond</div>
+                      <div class="timeline-event active"><div class="time">9:48:20</div>Drone 4 lifts from east wing dock</div>
+                      <div class="timeline-event"><div class="time">+5 sec</div>Live video — pilot, Fusus, Respond (same picture)</div>
+                      <div class="timeline-event"><div class="time">~1:20</div>Navigate east — lockdown holding, corridor empty</div>
                     </div>
                   </div>
                 </div>
@@ -327,12 +342,12 @@
             <div class="stage-header">
               <div class="stage-header-top">
                 <div>
-                  <h1>Step 5 — Live Operations</h1>
-                  <p class="stage-sub">Torres navigates east wing. Reduced speed, obstacle standoff. POI spotted — subject raises handgun. Latency target &lt;2 sec. Feed to pilot, Fusus, Respond.</p>
+                  <h1>Live Operations — Armed Subject</h1>
+                  <p class="stage-sub">Torres navigates east at reduced speed. POI flagged near Room 114 junction — adult male, dark clothing. Subject stops, turns, sees drone, <strong>raises handgun</strong>. Feed shared to every responding officer before entry.</p>
                 </div>
                 <div class="role-switcher">
                   <button class="role-pill is-active" data-role-switch="pilot" type="button">Remote Pilot</button>
-                  <button class="role-pill" data-role-switch="command" type="button">Marsh Dashboard</button>
+                  <button class="role-pill" data-role-switch="command" type="button">Marsh (Watch Cmd)</button>
                   <button class="role-pill" data-role-switch="le" type="button">Respond View</button>
                 </div>
               </div>
@@ -367,9 +382,9 @@
                 </div>
               </div>
               <div class="mock-frame hidden" data-role-view="command">
-                <div class="mock-titlebar"><span>Command Dashboard</span><span class="badge badge-critical">ACTIVE</span></div>
+                <div class="mock-titlebar"><span>RTCC Command Dashboard — Act 4 Campus Holds</span><span class="badge badge-critical">ACTIVE · Desert Mountain</span></div>
                 <div class="mock-content three-col">
-                  <div class="mock-panel"><h3>Campus</h3><div class="status-row"><span>Drones 1–3, 5</span><span class="badge badge-ok">Standby</span></div><div class="status-row"><span>Drone 4</span><span class="badge badge-critical">Active mission</span></div></div>
+                  <div class="mock-panel"><h3>Campus — deliberate stand-down</h3><div class="status-row"><span>Drones 1–3, 5</span><span class="badge badge-ok">Standby — zero movement</span></div><div class="status-row"><span>Drone 4</span><span class="badge badge-critical">Active mission</span></div><p style="font-size:0.72rem;color:var(--muted);margin:0.5rem 0 0">Not surveillance — response capacity calibrated to east wing threat only.</p></div>
                   <div class="mock-panel"><h3>Feed</h3><div class="feed-placeholder"><span class="live-tag">LIVE</span><span>Shared to Fusus + Respond</span></div></div>
                   <div class="mock-panel"><h3>Timeline</h3><div class="timeline-rail"><div class="timeline-event active"><div class="time">9:49:10</div>Armed subject confirmed</div></div></div>
                 </div>
@@ -386,8 +401,8 @@
             <div class="stage-header">
               <div class="stage-header-top">
                 <div>
-                  <h1>Step 6 — TASER / NMI Engagement</h1>
-                  <p class="stage-sub">Hold required before arm. Torres requests TASER arm → Marsh approves → target lock + 2-sec hold to discharge. Re-energize to sustain NMI until LE arrives.</p>
+                  <h1>Act 3 — TASER / NMI Engagement</h1>
+                  <p class="stage-sub">Torres: Hold (required before arm) → TASER arm request to Marsh → approval → target lock → 2-sec hold to discharge. Subject down <strong>9:49:41</strong> — 2 min 41 sec after panic button.</p>
                 </div>
                 <div class="role-switcher">
                   <button class="role-pill is-active" data-role-switch="pilot" type="button">Torres (Pilot)</button>
@@ -439,7 +454,7 @@
                 </div>
               </div>
               <div class="mock-frame hidden" data-role-view="supervisor">
-                <div class="mock-titlebar"><span>TASER Arm Authorization</span><span>Lt. Marsh</span></div>
+                <div class="mock-titlebar"><span>RTCC TASER Arm Authorization</span><span>Lt. Marsh · Watch Commander</span></div>
                 <div class="mock-content two-col">
                   <div class="mock-panel">
                     <h3>Arming Request — Drone 4</h3>
@@ -467,20 +482,20 @@
             <div class="stage-header">
               <div class="stage-header-top">
                 <div>
-                  <h1>Step 7 — Dispatch Handoff</h1>
-                  <p class="stage-sub">Updated package after NMI: subject down, weapon on floor, drone overwatch. Dispatch ack logged. Update cadence: every 30–60 sec.</p>
+                  <h1>Act 5 — Dispatch Handoff</h1>
+                  <p class="stage-sub">Torres pushes updated incident package to dispatch: subject down, weapon visible on floor (NOT secured), drone maintaining overwatch. Officers en route watched same feed for 2+ minutes.</p>
                 </div>
                 <div class="role-switcher">
-                  <button class="role-pill is-active" data-role-switch="rsoc" type="button">Torres</button>
-                  <button class="role-pill" data-role-switch="dispatch" type="button">Dispatch</button>
+                  <button class="role-pill is-active" data-role-switch="liaison" type="button">Torres (Handoff)</button>
+                  <button class="role-pill" data-role-switch="dispatch" type="button">Scottsdale PD CAD</button>
                 </div>
               </div>
               <div class="req-strip"><span class="req-chip">Handoff ≤ 60 sec after launch</span><span class="req-chip">Ack logged with actor + timestamp</span></div>
               <div class="gate-banner pending" id="gate-step-7"><strong>Gate:</strong> Dispatch acknowledges receipt? <span data-gate-status style="margin-left:auto;font-weight:700">Pending</span></div>
             </div>
             <div class="mock-ui">
-              <div class="mock-frame" data-role-view="rsoc">
-                <div class="mock-titlebar"><span>Incident Package — Post-NMI Update</span></div>
+              <div class="mock-frame" data-role-view="liaison">
+                <div class="mock-titlebar"><span>Torres — Post-NMI Handoff Package</span></div>
                 <div class="mock-content two-col">
                   <div class="mock-panel">
                     <div class="handoff-package">
@@ -495,11 +510,11 @@
                     </div>
                     <div class="mock-actions"><button class="mock-btn primary" type="button">Push to Dispatch</button></div>
                   </div>
-                  <div class="mock-panel"><h3>Officers En Route</h3><p style="font-size:0.78rem">Watching same feed for 2+ minutes before entry. Picture, not a prayer.</p></div>
+                  <div class="mock-panel"><h3>Officers En Route</h3><p style="font-size:0.78rem">They knew the east wing layout, where the subject was, and that the weapon had not been secured. They arrived with a <strong>picture, not a prayer</strong>.</p></div>
                 </div>
               </div>
               <div class="mock-frame hidden" data-role-view="dispatch">
-                <div class="mock-titlebar"><span>CAD / Dispatch</span></div>
+                <div class="mock-titlebar"><span>Scottsdale PD CAD</span><span>Units en route</span></div>
                 <div class="mock-content two-col">
                   <div class="mock-panel">
                     <div class="alert-card" style="animation:none;border-color:var(--warn)"><h4 style="color:var(--warn)">SUBJECT DOWN — Desert Mountain HS</h4><p>East wing · NMI confirmed · Weapon unsecured</p></div>
@@ -516,8 +531,8 @@
             <div class="stage-header">
               <div class="stage-header-top">
                 <div>
-                  <h1>Step 8 — Stabilization &amp; LE Arrival</h1>
-                  <p class="stage-sub">Officers enter at 9:51 AM with shared situational picture. Rodriguez transfers IC to LE. Subject secured 9:52 AM. Torres repositions on request.</p>
+                  <h1>Act 5 — LE Arrival &amp; Stabilization</h1>
+                  <p class="stage-sub">First officers enter 9:51 AM. Rodriguez held school-side command through lockdown — transfers IC to LE. Torres keeps Drone 4 airborne under unified command. Subject secured 9:52 AM. Five minutes after panic button.</p>
                 </div>
               </div>
               <div class="gate-banner pending" id="gate-step-8"><strong>Gate:</strong> Subject secured / threat contained? <span data-gate-status style="margin-left:auto;font-weight:700">Pending</span></div>
@@ -553,8 +568,8 @@
             <div class="stage-header">
               <div class="stage-header-top">
                 <div>
-                  <h1>Step 9 — Closure</h1>
-                  <p class="stage-sub">Marsh closes mission. Drone 4 returns to dock 9:54 AM. 11 min footage from Drone 4 only — Drones 1–3, 5 produced zero. Full audit trail locked.</p>
+                  <h1>Act 6 — Closure &amp; Audit Record</h1>
+                  <p class="stage-sub">Marsh initiates closure. Drone 4 to dock by 9:54. <strong>11 minutes of footage — Drone 4 only.</strong> Drones 1–3, 5 produced zero footage. Every access logged; incident-limited retention — architecture prevents routine hallway review.</p>
                 </div>
               </div>
               <div class="gate-banner pending" id="gate-step-9"><strong>Gate:</strong> Closure checklist complete? <span data-gate-status style="margin-left:auto;font-weight:700">Pending</span></div>
@@ -577,16 +592,17 @@
                   <div class="mock-panel">
                     <h3>Audit Trail</h3>
                     <div class="timeline-rail">
-                      <div class="timeline-event"><div class="time">9:47:05</div>Alert ingested</div>
-                      <div class="timeline-event"><div class="time">9:48:15</div>Launch approved — Marsh</div>
-                      <div class="timeline-event"><div class="time">9:48:20</div>Drone 4 airborne — Torres</div>
-                      <div class="timeline-event"><div class="time">9:49:10</div>Hold state — armed subject</div>
+                      <div class="timeline-event"><div class="time">9:47:05</div>Alert ingested — Torres triage</div>
+                      <div class="timeline-event"><div class="time">9:48:15</div>Launch approved — Lt. Marsh</div>
+                      <div class="timeline-event"><div class="time">9:48:20</div>Drone 4 airborne — Torres @ RTCC</div>
+                      <div class="timeline-event"><div class="time">9:49:10</div>Hold state — armed subject confirmed</div>
                       <div class="timeline-event"><div class="time">9:49:25</div>TASER arm approved — Marsh</div>
-                      <div class="timeline-event"><div class="time">9:49:41</div>Discharge — 2-sec hold registered</div>
-                      <div class="timeline-event"><div class="time">9:52:00</div>Subject secured — LE</div>
-                      <div class="timeline-event"><div class="time">9:54:00</div>Mission closed</div>
+                      <div class="timeline-event"><div class="time">9:49:41</div>Discharge — 2-sec hold registered · subject down</div>
+                      <div class="timeline-event"><div class="time">9:51:00</div>Officers enter building</div>
+                      <div class="timeline-event"><div class="time">9:52:00</div>Subject secured — no one else hurt</div>
+                      <div class="timeline-event"><div class="time">9:54:00</div>Mission closed — all drones docked</div>
                     </div>
-                    <p style="font-size:0.68rem;color:var(--muted);margin-top:0.5rem">Incident-limited retention. Every feed access logged. Not usable for routine hallway review.</p>
+                    <p style="font-size:0.68rem;color:var(--muted);margin-top:0.5rem">Incident-limited retention. Will not be used to review student behavior in the hallway last Thursday. The architecture prevents it — not just the policy.</p>
                   </div>
                 </div>
               </div>
